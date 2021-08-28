@@ -1,0 +1,370 @@
+@import '../../styles.scss';
+
+body
+{
+    font-family: $secondFamily;
+}
+
+/*start sectoin header*/
+.head
+{
+    background-image: url(../../assets/images/food.jpg);
+    background-size: 100% 100%;
+    height: 560px;
+    font-family: $secondFamily;
+}
+
+.head-caption
+{
+
+    color: $thiredColor;
+    h1 
+    {
+        font-size: 70px;
+        font-weight: 900;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 500;
+        
+    }
+
+}
+/*end sectoin header*/
+
+/*start sectoin overlay*/
+.overlay
+{
+   background-color: $fontColor;
+   font-family: $secondFamily;
+
+   .text-center h1 
+   {
+       font-weight: 900;
+   }
+    .text-muted
+    {
+       font-size: 22px;
+       font-weight: 500;
+
+    }
+.mini
+    {
+      width: 100px;
+      height: 3px;
+      background-color: $secondColor;
+    }
+
+    .overlay-caption h5
+    {
+        margin-left: 50px;
+        color: #828281;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .overlay-menu
+    {
+        cursor: pointer;
+        overflow: hidden;
+        
+
+        .circle
+        {
+            width: 50px;
+            height: 50px;
+            background-color:$secondColor;
+            position: absolute;
+            bottom: -10%;
+            right: 30px;
+            color: $thiredColor; 
+            
+            
+            span {
+                font-size: 40px;
+                font-weight: 900;
+                box-shadow: 5px 1px 5px  gray;
+               
+    
+            }
+            
+            
+        }
+
+    }
+}
+/*end sectoin overlay*/
+.menu-tags
+{
+    background-color:rgba(19,19,19,.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-family: raleway,sans-serif;
+    color: $thiredColor;
+    opacity: 0;
+    transition: opacity .5s;
+
+}
+
+.overlay-menu:hover .menu-tags
+{
+    opacity: 1;
+}
+img 
+{
+    transition: all .5s;
+}
+.overlay-menu:hover img {
+    transform: scale(1.1 ,1.1);
+}
+
+.menu-tags h4
+{
+    font-weight: 800;
+    font-size: 19px;
+}
+.menu-tags p 
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu-tags .brdr
+{
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+.menu-tags .price
+{
+  padding-top: 10px !important;
+  font-size: 28px;
+  font-weight: 700;
+        
+}
+.price span
+{
+         font-size: 30px;
+}
+
+
+#starters
+{
+    display: none;
+}
+
+#breakfast
+{
+    display: none;
+    
+}
+
+#lunch
+{
+    display: none;
+    
+}
+
+#dinner
+{
+    display: none;
+    
+}
+#dessert
+{
+    display: none;
+    
+}
+
+/*start sectoin insta*/
+.insta-caption
+{
+    
+    .sub-caption p 
+    {
+        font-size: 45px;
+        font-weight: 300;
+        font-family: $secondFamily;
+    }
+    div .p 
+    {
+        position: relative;
+        top: 17px;
+        font-size: 25px;
+        
+    }
+}
+.registers
+{
+    width: 100% !important;
+    .inpt-caption
+    {
+        outline: none;
+        height: 47px;
+        width: 25%;
+        border: 2px solid $brdrColor;
+        
+    }
+    .register
+    {
+        background-color: $brdrColor;
+        padding:10px 20px;
+        border: none;
+        border: 2px solid $brdrColor;
+    }
+    .register:hover
+    {
+        background-color: orange;
+    }
+}
+/*end sectoin insta*/
+
+
+/*start media query*/
+@media (max-width:576px)
+{
+    .overlay-menu
+    {
+        width: 100% ;
+        margin-bottom: 25px !important;
+        img 
+        {
+            width: 100%;
+        }
+        
+    }
+    .overlay-caption
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .insta-caption
+    {
+        text-align: center;
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+@media (max-width:767.98px) and (min-width:575.98px)
+{
+    .overlay-menu
+    {
+        width: 100% ;
+        margin: auto;
+        margin-bottom: 25px !important;
+        img 
+        {
+            width: 100%;
+        }
+        
+    }
+
+    .overlay-caption
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .insta-caption
+    {
+        text-align: center;
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+@media (max-width:992px) and (min-width:768px)
+{
+    .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+/*end media query*/
+
+@media (max-width: 450px) and (min-width:0px)
+{
+    .head-caption
+    {
+        h1
+        {
+            font-size: 40px !important;
+
+        }
+        p 
+        {
+            font-size: $secondFont;
+        }
+        .overlay
+        {
+            .d-flex
+            {
+                display: flex !important;
+                justify-content: space-between;
+            }
+        }
+    }
+    .insta-caption
+    {
+        .sub-caption p 
+        {
+            font-size: $secondFont +8 !important;
+        }
+        p
+        {
+            font-size: 17px !important;
+        }
+    }
+    .registers
+    {
+        .inpt-caption
+        {
+            width: auto !important;
+        }
+    }
+}

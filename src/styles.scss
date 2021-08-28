@@ -1,0 +1,40 @@
+@import "~animate.css/animate.css";
+
+$fontColor:#ececec;
+$secondColor:#f9c56a;
+$fontSize:32px;
+$secondFont:22px;
+$brdrColor:#f9c56a;
+$bgColor:#f7f3f4;
+$bgRgba:rgba(0,0,0,0.55);
+$thiredColor:#fff;
+$fweight:500;
+$ffamily:raleway,sans-serif;
+$secondFamily:"segoe ui light";
+
+
+*
+{
+    
+    box-sizing: border-box;
+}
+
+.navbar-inverse
+{
+    background-color: #000;
+}
+
+nav 
+{
+    transition: background-color 1s ;
+    
+
+}
+
+@media (max-width : 400 px)
+{
+    body
+    {
+        width: auto;
+    }
+}

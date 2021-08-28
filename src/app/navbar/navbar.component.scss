@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+nav{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    
+}
+
+li
+{
+    font-weight:$fweight ;
+}
+
+a:hover
+{
+    color: #f9c56a !important;
+}
+a
+{
+    color: $thiredColor !important;
+}
+

@@ -1,0 +1,384 @@
+
+
+@import '../../styles.scss';
+
+body
+{
+    font-family: $secondFamily;
+}
+/* start header*/
+.head
+{
+    background-image: url(../../assets/images/food.jpg);
+    background-size: 100% 100%;
+    height: 560px;
+    font-family: $secondFamily;
+}
+
+.head-caption
+{
+
+    color: $thiredColor;
+    h1 
+    {
+        font-size: 70px;
+        font-weight: 900;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        
+    }
+
+}
+
+/* end header*/
+
+
+/* start section recipe*/
+
+.recipe
+{
+  .recipe-caption
+  {
+    span 
+    {
+      color: #cdcdcd;
+      font-size: 16px;
+    }
+    
+    p 
+    {
+      font-weight: 500;
+      color: #4b4741;
+      line-height: 32px;
+
+    }
+    .org
+    {
+      background-color: $secondColor;
+      font-size: 15px;
+      font-weight: 500;
+      border-color: orange;
+    }
+    
+
+  }
+  .brdr
+ {
+   border: .5px solid #cdcdcd;
+   margin-top: 50px;
+   width: 100%;
+ }
+}
+
+/* end section recipe*/
+
+
+
+/* start section features*/
+
+.features
+{
+  .title
+  {
+    
+    font-weight: 700;
+  }
+  .feature
+  {
+    cursor: pointer;
+  }
+  span 
+  {
+    color: #cdcdcd;
+    font-size: 16px;
+  }
+  .active1 
+  {
+    color: #f6b61b;;
+  }
+}
+
+
+/* end section features*/
+
+/*start section insta */
+
+.insta-caption
+{
+    
+    .sub-caption p 
+    {
+        font-size: 45px;
+        font-weight: 300;
+        font-family: $secondFamily;
+    }
+    div .p 
+    {
+        position: relative;
+        top: 17px;
+        font-size: 25px;
+        
+    }
+}
+.registers
+{
+    width: 100% !important;
+    .inpt-caption
+    {
+        outline: none;
+        height: 47px;
+        width: 25%;
+        border: 2px solid $brdrColor;
+        
+    }
+    .register
+    {
+        background-color: $brdrColor;
+        padding:10px 20px;
+        border: none;
+        border: 2px solid $brdrColor;
+    }
+    .register:hover
+    {
+        background-color: orange;
+    }
+}
+
+.bg
+{
+    background-color: $bgColor;
+}
+
+/*end section insta*/
+
+
+
+
+
+
+
+
+
+
+/*start media query*/
+@media (max-width : 1200px) and (min-width : 992px)
+{
+  .recipe-caption
+  {
+    width: 100%;
+    img 
+    {
+      
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  .testimonial-caption
+  {
+    
+    margin-left: 10px !important;
+    width: 90% !important;
+
+  }
+  .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+@media (max-width : 992px) and (min-width : 768px)
+{
+  .recipe-caption
+  {
+    width: 100%;
+    img 
+    {
+      width: 50%;
+    }
+  }
+  .testimonial-caption
+  {
+    
+    margin-left: 10px !important;
+    width: 90% !important;   
+  }
+  .insta-caption
+  {
+      text-align: center;
+      .p 
+      {
+          padding-left: 25px;
+      }
+  }
+  .registers
+  {
+      margin:15px 0px;
+      display: flex;
+      justify-content: center !important;
+
+      .inpt-caption
+      {
+          width: 40%;
+          
+      }
+      
+  }
+  
+}
+
+@media (max-width : 768px) and (min-width : 576px)
+{
+  .testimonial-caption
+  {
+    
+    margin-left: 10px !important;
+    width: 90% !important;
+  }
+
+  .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width : 576px)
+{
+  .recipe-caption
+  {
+    img 
+    {
+      width:  100% !important;
+    }
+  }
+  .testimonial-caption
+  {
+    
+    margin-left: 10px !important;
+    width: 90% !important;
+  }
+
+  .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+/*end media query*/
+
+@media (max-width: 450px) and (min-width:0px)
+{
+    .head-caption
+    {
+        h1
+        {
+            font-size: 40px !important;
+
+        }
+        p 
+        {
+            font-size: $secondFont;
+        }
+
+    }
+    .recipe-caption
+    {
+      img 
+      {
+        width:  100% !important;
+      }
+    }
+    
+    
+    .reserv-footer
+        {
+            p
+            {
+                font-size: 16px !important;
+                span 
+                {
+                    font-size: 12px !important;
+
+                }
+
+            }
+            
+        }
+    .insta-caption
+    {
+        .sub-caption p 
+        {
+            font-size: $secondFont +8 !important;
+        }
+        p
+        {
+            font-size: 17px !important;
+        }
+        
+    }
+
+    .registers
+    {
+        .inpt-caption
+        {
+            width: auto !important;
+        }
+    }    
+}  

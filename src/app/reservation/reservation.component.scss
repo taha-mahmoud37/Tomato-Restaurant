@@ -1,0 +1,277 @@
+
+
+@import '../../styles.scss';
+
+body
+{
+    font-family: $secondFamily;
+}
+
+/* start section header*/
+.head
+{
+    background-image: url(../../assets/images/food.jpg);
+    background-size: 100% 100%;
+    height: 560px;
+    font-family: $secondFamily;
+}
+
+.head-caption
+{
+
+    color: $thiredColor;
+    h1 
+    {
+        font-size: 70px;
+        font-weight: 900;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 500;
+        
+    }
+
+}
+/* end section header*/
+
+/* start section reserv*/
+.reserv
+{
+    .mini
+    {
+    width: 100px;
+    height: 3px;
+    background-color: $secondColor;
+    margin-bottom: 20px;
+    }
+    h1 
+    {
+         font-weight:$fweight+200 ;
+    }
+    p
+    {
+       font-size: 22px;
+    }
+    font-family: 'segoe ui light' ;
+    .btn-reserv
+    {
+        background-color: #f9c56a;
+        font-weight: $fweight+400 !important;
+        
+    }
+    .btn-reserv:hover
+    {
+        background-color: orange;
+    }
+    .input-cont
+   {
+   background-color: #f3f1ed;
+   outline: none;
+   
+   }
+   label
+  {
+   
+   font-weight: $fweight +100;
+   font-size: 20px;
+  }
+  .reserv-footer
+  {
+      background-color: #fafafa;
+      font-size: 20px;
+      p 
+      {
+          font-size: 20px ;
+          font-weight: 600;
+
+          span 
+          {
+              font-size: 22px;
+              font-weight: 900;
+          }
+
+      }
+  }
+}
+
+.brdr
+{
+    border: 1px solid #f3f1ed;
+    padding:0px 25px;
+    margin-top: 40px;
+}
+/* end section reserv*/
+
+/* start section insta*/
+.insta-caption
+{
+    
+    .sub-caption p 
+    {
+        font-size: 45px;
+        font-weight: 300;
+        font-family: $secondFamily;
+    }
+    div .p 
+    {
+        position: relative;
+        top: 17px;
+        font-size: 25px;
+        
+    }
+}
+.registers
+{
+    width: 100% !important;
+    .inpt-caption
+    {
+        outline: none;
+        height: 47px;
+        width: 25%;
+        border: 2px solid $brdrColor;
+        
+    }
+    .register
+    {
+        background-color: $brdrColor;
+        padding:10px 20px;
+        border: none;
+        border: 2px solid $brdrColor;
+    }
+    .register:hover
+    {
+        background-color: orange;
+    }
+}
+
+.bg
+{
+    background-color: $bgColor;
+}
+/* end section reserv*/
+
+/* start media query*/
+
+@media (max-width:992px) and (min-width:768px)
+{
+    .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+@media (max-width:768px) and (min-width:576px)
+{
+    .insta-caption
+    {
+        text-align: center;
+        .p 
+        {
+            padding-left: 25px;
+        }
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+@media (max-width:576px)
+{
+    .insta-caption
+    {
+        text-align: center;
+        
+    }
+    .registers
+    {
+        margin:15px 0px;
+        display: flex;
+        justify-content: center !important;
+
+        .inpt-caption
+        {
+            width: 40%;
+            
+        }
+        
+    }
+}
+
+/* end media query*/
+
+@media (max-width: 450px) and (min-width:0px)
+{
+    .head-caption
+    {
+        h1
+        {
+            font-size: 40px !important;
+
+        }
+        p 
+        {
+            font-size: $secondFont;
+        }
+    }
+    .reserv-footer
+        {
+            p
+            {
+                font-size: 16px !important;
+                span 
+                {
+                    font-size: 12px !important;
+
+                }
+
+            }
+            
+        }
+    .insta-caption
+    {
+        .sub-caption p 
+        {
+            font-size: $secondFont +8 !important;
+        }
+        p
+        {
+            font-size: 17px !important;
+        }
+        
+    }
+
+    .registers
+    {
+        .inpt-caption
+        {
+            width: auto !important;
+        }
+    }    
+}    
